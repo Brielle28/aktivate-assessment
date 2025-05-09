@@ -1,1 +1,0 @@
-<template> setting new password</template>

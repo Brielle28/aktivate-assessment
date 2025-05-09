@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import SplashScreen from "@/views/SplashScreen.vue";
 import SignIn from "@/views/SignIn.vue";
 import ForgetPassword from "@/views/ForgetPassword.vue";
-import PasswordSetting from "@/views/PasswordSetting.vue";
+import PasswordResetting from "@/views/PasswordResetting.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,10 +15,11 @@ const router = createRouter({
       component: ForgetPassword,
     },
     {
-      path: "/passwordsetting",
-      name: "PasswordSetting",
-      component: PasswordSetting,
+      path: "/passwordresetting",
+      name: "PasswordResetting",
+      component: PasswordResetting,
     },
+    
   ],
 });
 
