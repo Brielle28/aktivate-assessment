@@ -20,7 +20,7 @@
         </button>
       </div>
       <div class="flex items-center self-end gap-2 md:self-auto">
-        <span class="text-sm text-white  md:inline">See all</span>
+        <span class="text-sm text-white md:inline">See all</span>
         <div class="flex gap-1">
           <button class="bg-[#141129] px-2 rounded-full py-1">
             <font-awesome-icon icon="fa-solid fa-less-than" class="text-xs" />

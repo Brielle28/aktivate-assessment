@@ -7,7 +7,26 @@
         'transform -translate-x-full md:translate-x-0': !isMobileSidebarOpen,
       }"
     >
-      <div class="flex items-center justify-center gap-3 mt-3 md:p-4">
+      <!-- Mobile Close Icon -->
+      <div class="flex justify-end px-4 pt-3 md:hidden">
+        <button @click="closeMobileSidebar" class="text-[#CDC2FF]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="flex items-center justify-center gap-3 md:mt-3 md:p-4">
         <div class="flex items-center">
           <div
             class="mx-auto mb-4 sm:mb-6 md:mb-[10px] w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[173.610px] md:h-[41px] bg-[url('/Logo2.png')] bg-contain bg-no-repeat bg-center"
@@ -30,10 +49,10 @@
         </router-link>
       </nav>
       <div
-            class="hidden md:flex top-[400px] right-1 items-center justify-center absolute mx-auto w-[350px] h-[200px] bg-[url('/Aside.png')] bg-contain bg-no-repeat bg-center"
-            role="img"
-            aria-label="Logo"
-          />
+        class="hidden md:flex top-[400px] right-1 items-center justify-center absolute mx-auto w-[350px] h-[200px] bg-[url('/Aside.png')] bg-contain bg-no-repeat bg-center"
+        role="img"
+        aria-label="Logo"
+      />
     </aside>
 
     <!-- Backdrop for mobile sidebar -->
@@ -130,7 +149,6 @@
           </div>
         </div>
       </header>
-
 
       <main class="flex-1 p-6 overflow-y-auto">
         <router-view />

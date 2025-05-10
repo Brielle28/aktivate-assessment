@@ -183,7 +183,7 @@ const stats = ref([
           <!-- Value -->
           <div class="text-2xl font-bold text-white">{{ stat.value }}</div>
           <!-- Chart -->
-          <div class="flex items-end justify-between w-24 h-12 space-x-1">
+          <div class="flex items-end justify-between w-16 h-12 space-x-1 md:w-24">
             <div
               v-for="(value, i) in stat.chartData"
               :key="i"
