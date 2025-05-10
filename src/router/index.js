@@ -4,10 +4,10 @@ import SignIn from "@/views/SignIn.vue";
 import ForgetPassword from "@/views/ForgetPassword.vue";
 import PasswordResetting from "@/views/PasswordResetting.vue";
 import DashboardLayout from "@/layout/DashboardLayout.vue";
-import DashBoard from "@/component/DashBoard.vue";
-import Campaign from "@/component/Campaign.vue";
-import CollaborationHub from "@/component/CollaborationHub.vue";
-import Influencer from "@/component/Influencer.vue"
+import DashBoard from "@/component/DashBoard/DashBoard.vue";
+import Campaign from "@/component/DashBoard/Campaign.vue";
+import CollaborationHub from "@/component/DashBoard/CollaborationHub.vue";
+import Influencer from "@/component/DashBoard/Influencer.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
