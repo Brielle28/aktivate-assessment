@@ -1,8 +1,12 @@
 <template>
   <section class="p-4 mt-[61px] text-white bg-transparent md:w-full">
     <!-- Header with tabs and see all button -->
-    <div class="flex flex-col items-start justify-between gap-3 mb-6 md:flex-row md:items-center md:gap-0">
-      <div class="flex items-center w-full gap-2 pb-2 overflow-x-auto md:gap-4 md:w-auto md:pb-0">
+    <div
+      class="flex flex-col items-start justify-between gap-3 mb-6 md:flex-row md:items-center md:gap-0"
+    >
+      <div
+        class="flex items-center w-full gap-2 pb-2 overflow-x-auto md:gap-4 md:w-auto md:pb-0"
+      >
         <button
           class="pb-1 font-medium text-white border-b-2 border-white whitespace-nowrap"
         >
@@ -26,7 +30,10 @@
             <font-awesome-icon icon="fa-solid fa-less-than" class="text-xs" />
           </button>
           <button class="bg-[#141129] px-2 rounded-full py-1">
-            <font-awesome-icon icon="fa-solid fa-greater-than" class="text-xs" />
+            <font-awesome-icon
+              icon="fa-solid fa-greater-than"
+              class="text-xs"
+            />
           </button>
         </div>
       </div>
@@ -75,11 +82,11 @@
           <div class="text-[#E1DCF7] font-thin text-xs uppercase my-[15px]">
             Campaign Plan
           </div>
-          <div class="flex flex-col justify-start gap-1 md:flex-row md:items-center">
-            <h3 class="mb-1 text-sm font-semibold text-white md:text-[15px]">
-              {{ campaign.title }}
-            </h3>
-            <h3 class="mb-2 text-sm font-normal text-[#E1DCF7] md:text-[15px]">
+          <div
+            class="flex flex-col justify-start gap-1 md:flex-row md:items-center"
+          >
+            <h3 class="text-sm font-normal text-[#E1DCF7] md:text-[15px]">
+              <span class="font-semibold text-white"> {{ campaign.title }}</span>
               {{ campaign.subTitle }}
             </h3>
           </div>
@@ -88,7 +95,9 @@
           </p>
         </div>
 
-        <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+        <div
+          class="flex flex-col justify-between gap-4 md:flex-row md:items-center"
+        >
           <div
             class="relative flex flex-col space-y-[8px] font-sans text-white"
           >
@@ -180,7 +189,9 @@
         <div class="w-full h-[1px] bg-gray-600 mt-4"></div>
 
         <!-- Stats grid -->
-        <div class="grid grid-cols-3 text-xs gap-x-4 gap-y-2 text-[10px] md:text-[13px] mt-4">
+        <div
+          class="grid grid-cols-3 text-xs gap-x-4 gap-y-2 text-[10px] md:text-[13px] mt-4"
+        >
           <div>
             <div class="text-[#B0ADC0] font-bold">VIEWS</div>
             <div class="font-medium text-white">-</div>
@@ -212,7 +223,7 @@
 </template>
 
 <script setup>
-import {campaigns} from "@/Utils/campaigns.js"
+import { campaigns } from "@/Utils/campaigns.js";
 </script>
 
 <style scoped>
