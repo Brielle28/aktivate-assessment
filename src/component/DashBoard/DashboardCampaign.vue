@@ -223,7 +223,7 @@
 </template>
 
 <script setup>
-import { campaigns } from "@/Utils/campaigns.js";
+import { campaigns } from "@/Utils/DashBoardcampaigns.js";
 </script>
 
 <style scoped>

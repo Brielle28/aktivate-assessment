@@ -20,20 +20,20 @@ export const navItems = [
   {
     label: 'Revenue',
     icon: `/revenue.png`,
-    to: '/dashboard/CollaborationHub',
-    routeName: 'CollaborationHub',
+    to: '/dashboard/revenue',
+    routeName: 'revenue',
   },
   {
     label: 'Platform',
     icon: `/patform.png`,
-    to: '/dashboard/CollaborationHub',
-    routeName: 'CollaborationHub',
+    to: '/dashboard/platform',
+    routeName: 'platform',
   },
   {
     label: 'Content',
     icon: `/campaign.png`,
-    to: '/dashboard/CollaborationHub',
-    routeName: 'CollaborationHub',
+    to: '/dashboard/content',
+    routeName: 'content',
   },
   {
     label: 'Influencers',

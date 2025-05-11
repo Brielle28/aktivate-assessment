@@ -48,8 +48,13 @@
           <span>{{ item.label }}</span>
         </router-link>
       </nav>
-      <div
+      <!-- <div
         class="hidden md:flex top-[400px] right-1 items-center justify-center absolute mx-auto w-[350px] h-[200px] bg-[url('/Aside.png')] bg-contain bg-no-repeat bg-center"
+        role="img"
+        aria-label="Logo"
+      /> -->
+      <div
+        class="hidden md:flex top-[400px] right-1 items-center justify-center absolute mx-auto w-[350px] h-[200px] bg-[url('/Aside.png')] bg-contain bg-no-repeat bg-center z-0 pointer-events-none"
         role="img"
         aria-label="Logo"
       />

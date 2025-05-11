@@ -8,6 +8,9 @@ import DashBoard from "@/component/DashBoard/DashBoard.vue";
 import Campaign from "@/component/DashBoard/Campaign.vue";
 import CollaborationHub from "@/component/DashBoard/CollaborationHub.vue";
 import Influencer from "@/component/DashBoard/Influencer.vue"
+import Revenue from "@/component/DashBoard/Revenue.vue"
+import Content from "@/component/DashBoard/Content.vue"
+import Platform from "@/component/DashBoard/Platform.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -38,6 +41,21 @@ const router = createRouter({
           path: "Influencer",
           name: "Influencer",
           component: Influencer,
+        },
+        {
+          path: "revenue",
+          name: "revenue",
+          component: Revenue,
+        },
+        {
+          path: "platform",
+          name: "platform",
+          component: Platform,
+        },
+        {
+          path: "content",
+          name: "content",
+          component: Content,
         },
       ],
     },
