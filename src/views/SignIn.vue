@@ -62,9 +62,8 @@
             />
             <div class="flex justify-between w-full mt-1">
               <p v-if="passwordError" class="text-xs text-red-500">{{ passwordError }}</p>
-              <a href="/forgetpassword" class="ml-auto text-xs text-gray-500 hover:underline"
-                >Forgot Password?</a
-              >
+              <router-link href="/forgetpassword" class="ml-auto text-xs text-gray-500 hover:underline"
+                >Forgot Password?</router-link>
             </div>
           </div>
 
@@ -93,6 +92,7 @@
 <script setup>
 import { ref, watch } from "vue";
 import { useRouter } from 'vue-router';
+import { RouterLink, RouterView, useRoute, useRouter } from "vue-router";
 
 let router;
 try {
