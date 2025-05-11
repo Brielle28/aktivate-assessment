@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex flex-col items-center justify-start w-full min-h-screen bg-white">
+  <div class="relative flex flex-col items-center justify-center w-full min-h-screen bg-white md:justify-start">
     <div 
       v-if="showNotification" 
       class="fixed z-50 px-4 py-2 text-white transition-opacity duration-500 bg-green-500 rounded-md shadow-md top-4 right-4"
@@ -82,7 +82,7 @@
       </div>
     </div>
     <!-- Background image with responsive handling -->
-    <div class="absolute bottom-0 w-full">
+    <div class="absolute bottom-0 hidden w-full md:block">
       <img
         src="/bg.png"
         alt="Placeholder Graphic"

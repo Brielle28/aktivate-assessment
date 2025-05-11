@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col items-center justify-start w-full min-h-screen bg-white"
+    class="relative flex flex-col items-center justify-center w-full min-h-screen bg-[white] md:justify-start md:overflow-scroll overflow-hidden"
   >
     <div
       v-if="showNotification"
@@ -24,6 +24,7 @@
           role="img"
           aria-label="Logo"
         />
+        
         <h1 class="mb-2 text-2xl sm:text-[28px] md:text-[32px] font-bold">
           Forgot Password
         </h1>
@@ -70,7 +71,7 @@
       </div>
     </div>
 
-    <div class="absolute bottom-0 w-full">
+    <div class="absolute bottom-0 hidden w-full md:block">
       <img
         src="/bg.png"
         alt="Placeholder Graphic"
